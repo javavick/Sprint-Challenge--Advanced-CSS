@@ -10,6 +10,12 @@
   align-items: center;
 }
 
+.flexColumn() {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .buttonStyle(@bgColor, @fontColor) {
   background-color: @bgColor;
   color: @fontColor;
@@ -24,5 +30,10 @@
   &:hover {
     background-color: @fontColor;
     color: @bgColor;
+  }
+
+  @media @phone {
+    width: 100%;
+    padding: 22px 40px;
   }
 }
