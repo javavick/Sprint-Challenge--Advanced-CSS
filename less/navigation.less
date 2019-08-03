@@ -1,1 +1,25 @@
-// Navigation code here
+#nav {
+  .flexCenter();
+  flex-direction: column;
+  padding-top: 14px;
+  background-color: @nav-bg;
+  width: 100%;
+  border-bottom: 1px solid @main-border-color;
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  #nav-links {
+    .flexBetween();
+    width: 375px;
+    margin-top: 19px;
+    padding-bottom: 11px;
+
+    a {
+      text-decoration: none;
+      font-size: 1.6rem;
+      color: @nav-font;
+    }
+  }
+}
