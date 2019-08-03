@@ -291,7 +291,7 @@ footer {
 }
 .home .walk .walk-text #btn {
   background-color: #23293b;
-  color: rgba(246, 246, 246, 0.753);
+  color: #f1f1f1;
   border: none;
   border-radius: 5px;
   padding: 7px 19px;
@@ -301,7 +301,7 @@ footer {
   cursor: pointer;
 }
 .home .walk .walk-text #btn:hover {
-  background-color: rgba(246, 246, 246, 0.753);
+  background-color: #f1f1f1;
   color: #23293b;
 }
 @media (max-width: 500px) {
