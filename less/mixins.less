@@ -1,1 +1,39 @@
-// Mixins Here
+.flexCenter() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexBetween() {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flexColumn() {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.buttonStyle(@bgColor, @fontColor) {
+  background-color: @bgColor;
+  color: @fontColor;
+  border: none;
+  border-radius: 5px;
+  padding: 7px 19px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  font-family: "Ubuntu", sans-serif;
+  cursor: pointer;
+
+  &:hover {
+    background-color: @fontColor;
+    color: @bgColor;
+  }
+
+  @media @phone {
+    width: 100%;
+    padding: 22px 40px;
+  }
+}
